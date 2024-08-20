@@ -242,13 +242,13 @@ export default class MyNavLink extends Component {
 
 ```html
 <!-- 路由链接 -->
-<Link to='/home/message/detail/Bruce/21'>params</Link>
+<Link to='/home/message/detail/T/21'>params</Link>
 <Link to={`/home/message/detail/${item.name}/${item.age}`}>{item.name}</Link>
 
-<Link to='/home/message/detail/?name=Bruce&age=21'>search</Link>
+<Link to='/home/message/detail/?name=T&age=21'>search</Link>
 <Link to={`/home/message/detail/?id=${item.name}&title=${item.age}`}>{item.name}</Link>
 
-<Link to={{pathname: '/home/message/detail', state: {name: 'Bruce', age: 21}}}>state</Link>
+<Link to={{pathname: '/home/message/detail', state: {name: 'T', age: 21}}}>state</Link>
 
 <!-- 注册路由 -->
 <Route path='/home/message/detail/:name/:age' component={Detail} />

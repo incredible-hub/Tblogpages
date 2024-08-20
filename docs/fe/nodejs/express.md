@@ -59,7 +59,7 @@ app.listen(80, () => {
 ```js
 app.use(express.static('public'))
 app.use(express.static('files'))
-app.use('/bruce', express.static('bruce'))
+app.use('/T', express.static('T'))
 
 /*
 可直接访问 public, files 目录下的静态资源
@@ -67,8 +67,8 @@ http://localhost:3000/images/bg.jpg
 http://localhost:3000/css/style.css
 http://localhost:3000/js/login.js
 
-通过带有 /bruce 前缀的地址访问 bruce 目录下的文件
-http://localhost:8080/bruce/images/logo.png
+通过带有 /T 前缀的地址访问 T 目录下的文件
+http://localhost:8080/T/images/logo.png
 */
 ```
 
@@ -264,7 +264,7 @@ app.use(express.urlencoded({ extended: false }))
 - `Access-Control-Allow-Origin`：制定了允许访问资源的外域 URL
 
 ```js
-res.setHeader('Access-Control-Allow-Origin', 'http://bruceblog.io')
+res.setHeader('Access-Control-Allow-Origin', 'http://Tblog.io')
 res.setHeader('Access-Control-Allow-Origin', '*')
 ```
 

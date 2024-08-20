@@ -57,7 +57,7 @@ db.query(sql, [username, password], (err, results) => {
 向表中新增数据时，如果数据对象的每个属性和数据表的字段一一对应，则可以通过如下方式快速插入数据：
 
 ```js
-const user = {username:'Bruce', password:'55520'}
+const user = {username:'T', password:'55520'}
 const sql = 'insert into users set ?'
 db.query(sql, user, (err, results) => {
   ...
@@ -76,7 +76,7 @@ db.query(sql, [username, password, id], (err, results) => {
 快捷方式：
 
 ```js
-const user = {id:7,username:'Bruce',password:'55520'}
+const user = {id:7,username:'T',password:'55520'}
 const sql = 'update users set ? where id=?'
 db.query(sql, [user, user.id], (err, results) => {
   ...
@@ -108,7 +108,7 @@ db.query('update users set status=1 where id=?', 7, (err, results) => {
 
 ```js
 app.get('/index.html', (req, res) => {
-  const user = { name: 'Bruce', age: 29 }
+  const user = { name: 'T', age: 29 }
   const html = `<h1>username:${user.name}, age:${user.age}</h1>`
   res.send(html)
 })
@@ -168,7 +168,7 @@ npm install express-session
 const session = require('express-session')
 app.use(
   session({
-    secret: 'Bruce', // secret 的值为任意字符串
+    secret: 'T', // secret 的值为任意字符串
     resave: false,
     saveUninitalized: true,
   })
@@ -272,7 +272,7 @@ const jwt = require('jsonwebtoken')
 const expressJWT = require('express-jwt')
 
 // 密钥为任意字符串
-const secretKey = 'Bruce'
+const secretKey = 'T'
 ```
 
 3. 生成 JWT 字符串

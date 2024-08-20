@@ -3,7 +3,7 @@
 > 该项目为黑马 pink 老师的 Echarts 数据可视化展板公开课作业
 
 - B 站视频链接：[https://www.bilibili.com/video/BV1v7411R7mp](https://www.bilibili.com/video/BV1v7411R7mp)
-- 项目线上展示地址：[https://brucecai55520.gitee.io/echarts-board/](https://brucecai55520.gitee.io/echarts-board/)
+- 项目线上展示地址：[https://Tcai55520.gitee.io/echarts-board/](https://Tcai55520.gitee.io/echarts-board/)
 
 ## 可视化面板介绍
 

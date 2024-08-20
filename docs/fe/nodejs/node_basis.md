@@ -465,10 +465,10 @@ server.listen(80, () => {
 - 若导入第三方模块， Node.js 会从**当前模块的父目录**开始，尝试从 `/node_modules` 文件夹中加载第三方模块。
 - 如果没有找到对应的第三方模块，则移动到再**上一层父目录**中，进行加载，直到**文件系统的根目录**。
 
-例如，假设在 `C:\Users\bruce\project\foo.js` 文件里调用了 `require('tools')`，则 Node.js 会按以下顺序查找：
+例如，假设在 `C:\Users\T\project\foo.js` 文件里调用了 `require('tools')`，则 Node.js 会按以下顺序查找：
 
-- `C:\Users\bruce\project\node_modules\tools`
-- `C:\Users\bruce\node_modules\tools`
+- `C:\Users\T\project\node_modules\tools`
+- `C:\Users\T\node_modules\tools`
 - `C:\Users\node_modules\tools`
 - `C:\node_modules\tools`
 

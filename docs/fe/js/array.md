@@ -13,7 +13,7 @@ let arr = [520, 55520, 521]
 // 添加单个元素
 let newLen = arr.push(666)
 // 添加多个元素
-arr.push(2333, 'BruceBlog')
+arr.push(2333, 'TBlog')
 ```
 
 #### `pop()`
@@ -38,7 +38,7 @@ let arr = [520, 55520, 521]
 // 添加单个元素
 let newLen = arr.unshift(666)
 // 添加多个元素
-arr.unshift(2333, 'BruceBlog') // [2333, 'BruceBlog', 666, 520, 55520, 521]
+arr.unshift(2333, 'TBlog') // [2333, 'TBlog', 666, 520, 55520, 521]
 ```
 
 #### `shift()`

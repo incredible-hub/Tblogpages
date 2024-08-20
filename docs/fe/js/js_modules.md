@@ -23,7 +23,7 @@ Nodejs 用的是 CommonJS 模块化规范。
 module.exports = 'module1'
 
 // m2.js
-exports.name = 'Bruce'
+exports.name = 'T'
 exports.age = 11
 
 // m3.js
@@ -45,7 +45,7 @@ const fs = require('fs')
 const axios = require('axios')
 
 console.log(m1) // 'module1'
-console.log(m2) // {name: 'Bruce', age: 11}
+console.log(m2) // {name: 'T', age: 11}
 console.log(m3) // {car: 'Benz', price: 50}
 ```
 
@@ -103,10 +103,10 @@ Object.keys(require.cache).forEach(function (key) {
 - 若导入第三方模块， Node.js 会从**当前模块的父目录**开始，尝试从 `/node_modules` 文件夹中加载第三方模块。
 - 如果没有找到对应的第三方模块，则移动到再**上一层父目录**中，进行加载，直到**文件系统的根目录**。
 
-例如，假设在 `C:\Users\bruce\project\foo.js` 文件里调用了 `require('tools')`，则 Node.js 会按以下顺序查找：
+例如，假设在 `C:\Users\T\project\foo.js` 文件里调用了 `require('tools')`，则 Node.js 会按以下顺序查找：
 
-- `C:\Users\bruce\project\node_modules\tools`
-- `C:\Users\bruce\node_modules\tools`
+- `C:\Users\T\project\node_modules\tools`
+- `C:\Users\T\node_modules\tools`
 - `C:\Users\node_modules\tools`
 - `C:\node_modules\tools`
 
@@ -163,7 +163,7 @@ ES6 使用 `export` 和 `import` 导出和导入模块。
 ```js
 // 分别暴露（命名行内导出）
 export const age = 66
-export let name = 'Bruce'
+export let name = 'T'
 export function sayHello() {
   console.log('hello from m1.js')
 }
@@ -247,13 +247,13 @@ export let msg = 'good'
 
 ```js
 // m1.js
-export let name = 'Bruce'
+export let name = 'T'
 setTimeout(() => {
   name = 'good'
 }, 1000)
 
 import { name } from './m1.js'
-console.log(name) // 'Bruce'
+console.log(name) // 'T'
 setTimeout(() => {
   console.log(name)
 }, 1500) // 'good'

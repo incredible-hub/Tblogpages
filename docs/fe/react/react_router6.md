@@ -431,7 +431,7 @@ import { Outlet, useNavigate } from 'react-router-dom'
 
 export default function Message() {
   const [list] = useState([
-    { id: 1, name: 'Bruce', age: 33 },
+    { id: 1, name: 'T', age: 33 },
     { id: 2, name: 'You', age: 3 },
     { id: 3, name: 'React', age: 333 },
   ])
@@ -499,9 +499,9 @@ export default function Detail() {
 }
 
 /*
-params: {id: '1', name: 'Bruce', age: '33'}
-pathname: "/hello/message/detail/1/Bruce/33"
-pathnameBase: "/hello/message/detail/1/Bruce/33"
+params: {id: '1', name: 'T', age: '33'}
+pathname: "/hello/message/detail/1/T/33"
+pathnameBase: "/hello/message/detail/1/T/33"
 pattern: {path: 'hello/message/detail/:id/:name/:age', caseSensitive: false, end: true}
 */
 ```
@@ -534,12 +534,12 @@ console.log(result)
 给定一个 URL 值，解析其中的：`path`、`search`、`hash` 值。
 
 ```jsx
-const res = useResolvedPath('/user?id=001&name=Bruce#React')
+const res = useResolvedPath('/user?id=001&name=T#React')
 console.log(res)
 
 /*
 hash: '#React'
 pathname: '/user'
-search: '?id=001&name=Bruce'
+search: '?id=001&name=T'
 */
 ```

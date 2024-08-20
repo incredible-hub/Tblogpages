@@ -31,7 +31,7 @@ export default {
     outlineTitle: 'Have a brief look',
     // 设置社交链接
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/BruceCQM' },
+      { icon: 'github', link: 'https://github.com/incredible-hub' },
       { icon: 'twitter', link: 'https://twitter.com' },
       { icon: 'facebook', link: 'https://www.facebook.com' },
       { icon: 'youtube', link: 'https://www.youtube.com/' },
@@ -41,11 +41,11 @@ export default {
     // 设置底部的版权声明，只有左边侧边栏不存在才会展示
     footer: {
       message: 'If there is any reprint or CV, please mark the original address of this website',
-      copyright: 'Copyright © 2019-present BruceBlog'
+      copyright: 'Copyright © 2019-present TBlog'
     },
     // 设置编辑页面链接
     editLink: {
-      pattern: 'https://github.com/BruceCQM/bruceblog',
+      pattern: 'https://github.com/incredible-hub/Tblogpages',
       text: 'Edit this page on GitHub'
     },
     // 设置上下篇文字

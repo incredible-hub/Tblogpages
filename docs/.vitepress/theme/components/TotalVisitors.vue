@@ -5,8 +5,7 @@ const DEV = inject("DEV");
 </script>
 
 <template>
-  <img v-if="!DEV" class="visitor"
-    src="https://visitor-badge.laobi.icu/badge?page_id=bruceblog_55520"
+  <img v-if="!DEV" class="visitor" src="https://visitor-badge.laobi.icu/badge?page_id=Tblog_55520"
     onerror="this.style.display='none'" />
 </template>
 
@@ -15,6 +14,7 @@ const DEV = inject("DEV");
   margin-left: 10px;
   margin-top: 2px;
 }
+
 /* @media (min-width: 768px) and (max-width: 920px) {
   .visitor {
     display: none;

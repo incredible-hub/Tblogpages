@@ -482,7 +482,7 @@ const jwt = require('jsonwebtoken')
 
 ```js
 module.exports = {
-  jwtSecretKey: 'Bruce',
+  jwtSecretKey: 'T',
 }
 ```
 

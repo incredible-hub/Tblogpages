@@ -8,11 +8,9 @@ const route = useRoute()
 
 <template>
   <div class="copyright_container">
-    Copyright © 2019-present BruceBlog
-    <img v-if="!DEV" class="visitor"
-      :src="`https://visitor-badge.laobi.icu/badge?page_id=bruceblog_55520_${route.path}`"
-      title="How many people visit this page"
-      onerror="this.style.display='none'" />
+    Copyright © 2019-present TBlog
+    <img v-if="!DEV" class="visitor" :src="`https://visitor-badge.laobi.icu/badge?page_id=Tblog_55520_${route.path}`"
+      title="How many people visit this page" onerror="this.style.display='none'" />
   </div>
 </template>
 
@@ -30,6 +28,7 @@ const route = useRoute()
   margin-left: 10px;
   margin-top: 1px;
 }
+
 /* 
 @media (max-width: 414px) {
   .visitor {

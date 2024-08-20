@@ -1,6 +1,6 @@
 # COVID-19 新冠疫情实时数据和政策展示
 
-项目线上演示地址：[http://brucecai55520.gitee.io/covid19](http://brucecai55520.gitee.io/covid19)
+项目线上演示地址：[http://Tcai55520.gitee.io/covid19](http://Tcai55520.gitee.io/covid19)
 
 接口主要使用的是天行数据和聚合数据提供的 API，前者没有跨域问题，后者有
 
@@ -34,4 +34,4 @@
 - flex 实现图片居中
 - 打包路径问题 publicPath，不然部署有 Provisional headers are shown 错误；还有国内地图点击的跳转路径也是
 - 聚合数据 API 生产环境无法使用，跨域问题，jsonp 的使用
-- 报错：`Mixed Content: The page at 'https://brucecai55520.gitee.io/covid19/#/' was loaded over HTTPS, but requested an insecure XMLHttpRequest endpoint 'http://iwenwiki.com/wapicovid19/all.php'. This request has been blocked; the content must be served over HTTPS.` HTTPS 页面里动态的引入 HTTP 资源,比如引入一个 js 文件,会被直接 block 掉的。部署 Gitee Pages 时不能使用 HTTPS，要使用 HTTP
+- 报错：`Mixed Content: The page at 'https://Tcai55520.gitee.io/covid19/#/' was loaded over HTTPS, but requested an insecure XMLHttpRequest endpoint 'http://iwenwiki.com/wapicovid19/all.php'. This request has been blocked; the content must be served over HTTPS.` HTTPS 页面里动态的引入 HTTP 资源,比如引入一个 js 文件,会被直接 block 掉的。部署 Gitee Pages 时不能使用 HTTPS，要使用 HTTP

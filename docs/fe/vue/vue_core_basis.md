@@ -454,7 +454,7 @@ data() {
   return {
     list: [...],
     obj: {
-      name: 'Bruce',
+      name: 'T',
       age: 88,
       sex: 'unknown'
     },
@@ -499,7 +499,7 @@ data() {
 ```
 
 ```js
-data() { return { username: "Bruce" } }
+data() { return { username: "T" } }
 ```
 
 ### v-html
