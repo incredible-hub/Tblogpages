@@ -5,9 +5,9 @@ export default {
   // 自定义网站 favicon
   head: [['link', { rel: 'icon', href: '/logo.png' }]],
   // 根路径，和仓库名一致
-  base: '/bruceblogpages/',
+  base: '/Tblogpages/',
   // 左上角标题
-  title: 'BruceBlog',
+  title: 'TBlog',
   // 爬虫爬取的内容
   description: '前端学习-面试题-资源导航-Vue-React-Node',
   // 设置展示最后修改时间

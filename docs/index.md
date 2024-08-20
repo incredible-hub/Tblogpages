@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: BruceBlog
+  name: TBlog
   text: 一名前端er的学习笔记
   tagline: 既往不恋，纵情向前
   image:
@@ -13,7 +13,7 @@ hero:
       text: Getting Started
       link: /fe/html/html
     - theme: alt
-      text: How to build BruceBlog with Vitepress
+      text: How to build TBlog with Vitepress
       link: https://vitepress.dev/
 
 features:
