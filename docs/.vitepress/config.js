@@ -4,8 +4,9 @@ import sidebar from './sidebar'
 export default {
   // 自定义网站 favicon
   head: [['link', { rel: 'icon', href: '/logo.png' }]],
-  // 根路径，和仓库名一致
-  base: '/Tblogpages/',
+  // 根路径，和仓库名一致，如果配置域名直接写/就行
+  base: '/',
+  // base: '/Tblogpages/',
   // 左上角标题
   title: 'TBlog',
   // 爬虫爬取的内容
