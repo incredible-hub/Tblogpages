@@ -29,20 +29,20 @@ export default {
     // 标题深度，[2,3] 表示提取 h2 和 h3 标题
     outline: [2, 3],
     // 目录标题
-    outlineTitle: 'Have a brief look',
+    outlineTitle: '目录',
     // 设置社交链接
     socialLinks: [
       { icon: 'github', link: 'https://github.com/incredible-hub' },
-      { icon: 'twitter', link: 'https://twitter.com' },
-      { icon: 'facebook', link: 'https://www.facebook.com' },
-      { icon: 'youtube', link: 'https://www.youtube.com/' },
+      // { icon: 'twitter', link: 'https://twitter.com' },
+      // { icon: 'facebook', link: 'https://www.facebook.com' },
+      // { icon: 'youtube', link: 'https://www.youtube.com/' },
     ],
     // 最后更新时间
     lastUpdatedText: 'Last updated',
     // 设置底部的版权声明，只有左边侧边栏不存在才会展示
     footer: {
       message: 'If there is any reprint or CV, please mark the original address of this website',
-      copyright: 'Copyright © 2019-present TBlog'
+      copyright: 'Copyright © 2024-present TBlog'
     },
     // 设置编辑页面链接
     editLink: {
