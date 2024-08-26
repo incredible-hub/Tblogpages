@@ -1,16 +1,30 @@
-import nav from './nav'
-import sidebar from './sidebar'
+import nav from "./nav";
+import sidebar from "./gen_siderbar";
+// import set_siderbar from "./gen_siderbar";
+// import AutoSidebarPlugin from "vitepress-auto-sidebar-plugin";
+
+// set_siderbar('./docs/fe');
 
 export default {
+  // vite: {
+  //   plugins: [
+  //     AutoSidebarPlugin({
+  //       // 如果不指定 `srcDir`，则默认使用 `vitepress` 的 `srcDir`
+  //       srcDir: "./docs",
+  //       collapsed: true,
+
+  //     }),
+  //   ],
+  // },
   // 自定义网站 favicon
-  head: [['link', { rel: 'icon', href: '/logo.png' }]],
+  head: [["link", { rel: "icon", href: "/logo.png" }]],
   // 根路径，和仓库名一致，如果配置域名直接写/就行
-  base: '/',
+  base: "/",
   // base: '/Tblogpages/',
   // 左上角标题
-  title: 'TBlog',
+  title: "TBlog",
   // 爬虫爬取的内容
-  description: '前端学习-面试题-资源导航-Vue-React-Node',
+  description: "前端学习-面试题-资源导航-Vue-React-Node",
   // 设置展示最后修改时间
   lastUpdated: true,
   // markdown 相关配置
@@ -21,7 +35,7 @@ export default {
   // 默认主题相关配置 [https://vitepress.dev/reference/default-theme-config]
   themeConfig: {
     // 配置左上角的 logo
-    logo: '/logo.png',
+    logo: "/logo.png",
     // 导航栏
     nav,
     // 侧边栏
@@ -29,30 +43,31 @@ export default {
     // 标题深度，[2,3] 表示提取 h2 和 h3 标题
     outline: [2, 3],
     // 目录标题
-    outlineTitle: '目录',
+    outlineTitle: "目录",
     // 设置社交链接
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/incredible-hub' },
+      { icon: "github", link: "https://github.com/incredible-hub" },
       // { icon: 'twitter', link: 'https://twitter.com' },
       // { icon: 'facebook', link: 'https://www.facebook.com' },
       // { icon: 'youtube', link: 'https://www.youtube.com/' },
     ],
     // 最后更新时间
-    lastUpdatedText: 'Last updated',
+    lastUpdatedText: "Last updated",
     // 设置底部的版权声明，只有左边侧边栏不存在才会展示
     footer: {
-      message: 'If there is any reprint or CV, please mark the original address of this website',
-      copyright: 'Copyright © 2024-present TBlog'
+      message:
+        "If there is any reprint or CV, please mark the original address of this website",
+      copyright: "Copyright © 2024-present TBlog",
     },
     // 设置编辑页面链接
     editLink: {
-      pattern: 'https://github.com/incredible-hub/Tblogpages',
-      text: 'Edit this page on GitHub'
+      pattern: "https://github.com/incredible-hub/Tblogpages",
+      text: "Edit this page on GitHub",
     },
     // 设置上下篇文字
     docFooter: {
-      prev: 'Previous page',
-      next: 'Next page'
-    }
+      prev: "Previous page",
+      next: "Next page",
+    },
   },
-}
+};
