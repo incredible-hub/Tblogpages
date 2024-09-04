@@ -45,12 +45,12 @@ export default [
   {
     text: "面试专题",
     items: [
-      { text: "算法题", link: "/interview/leetcode/traverseTree" },
+      { text: "算法题", link: "/interview/leetcode/树的遍历/traverseTree" },
       { text: "输入输出题", link: "/interview/inputAndOutput/test" },
     ],
   },
   {
-    text: "知也无涯",
+    text: "博客杂记",
     items: [{ text: "Python", link: "/lang/python/crawler" }],
   },
 ];
